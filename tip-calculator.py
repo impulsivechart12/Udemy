@@ -8,7 +8,7 @@ total = (bill * tip_percentage) + bill
 
 # calculate the value that each person owes after splitting
 total = round(total / split_number, 3)
-
+total = "{:.2f}".format(total)
 #print what each person should owe
 
 print(f"Each person should pay: ${total}")
