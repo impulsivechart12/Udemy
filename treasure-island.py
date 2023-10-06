@@ -20,8 +20,10 @@ if direction == "left":
             print("There is fire everywhere ahhhhhhhhh!!!")
         elif direction == "blue":
             print("The door is booby trapped, and you are done son!")
-        else:
+        elif direction == "yellow":
             print("You found the Treasure congratulations!!")
+        else:
+            print("Input a choice that is not an option, game over dude.")
     else:
         print('you were eaten by a monstrous catfish \n'
               'game over')
