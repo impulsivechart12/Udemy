@@ -18,16 +18,20 @@ def deal_cards(card_list):
     print(f"You were dealt {player_hand}")
     print(f"The Dealer was dealt a {dealer_hand}")
 
-def check_dealer(dealer_hand):
+def run_scores(dealer_hand, player_hand):
     global dealer_score
+    global player_score
     for card in dealer_hand:
         dealer_score += card
+    for card in player_hand:
+        player_score += card
+
+def check_scores(player_score, dealer_score):
     if dealer_score == 21:
-        print("Dealer has BlackJack, you lose.")
+
 
 deal_cards(cards)
-check_dealer(dealer_hand)
-
+run_scores(dealer_hand, player_hand)
 
 # play_blackjack = True
 #
