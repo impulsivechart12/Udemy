@@ -13,7 +13,7 @@ def print_report(resoure_data):
 
 # TODO: 2. check resources sufficient to make drink order.
 def check_resources(customer_order, resource_data, menu_key):
-    """Check the current machine resoures against the MENU values."""
+    """Check the current machine resources against the MENU values."""
     order_to_check = menu_key[customer_order]["ingredients"]
     for key in order_to_check:
         if order_to_check[key] > resources.get(key):
@@ -48,7 +48,7 @@ def check_transaction(amount_paid, drink_cost):
 
 # TODO: 5. Make the coffee for the customer.
 def make_coffe(drink_name, order_ingredients):
-    """deduct the used ingriedients from resources"""
+    """deduct the used ingredients from resources"""
     for item in order_ingredients:
         resources[item] -= order_ingredients[item]
     print(f"Here is your {drink_name} ☕️. Enjoy!")
