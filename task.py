@@ -1,6 +1,9 @@
-height = 1.65 
-weight = 84
+import random
 
-# Write your code here.
-# Calculate the bmi using weight and height.
-bmi = weight / height**2
+friends = ["Ashley", "Cole", "Erin", "Joe", "Matt", "Sara", "Zach"]
+random_friend = random.choice(friends)
+
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+dirty_dozen = [fruits, vegetables]
