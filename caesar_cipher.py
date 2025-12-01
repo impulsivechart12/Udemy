@@ -24,34 +24,35 @@ def caesar(user_text, user_shift, user_direction):
             end_text += letter
     print(f"The {user_direction}d text is {end_text}")
 
-# def encrypt(plain_text, shift_amount):
-#     encrypted_word = ""
-#     for letter in text:
-#         if letter in alphabet:
-#             position = alphabet.index(letter)
-#             new_position = position + shift_amount
-#             if new_position > len(alphabet):
-#                 new_position %= len(alphabet)
-#                 encrypted_word += alphabet[new_position]
-#             else:
-#                 encrypted_word += alphabet[new_position]
-#         else:
-#             encrypted_word += letter
-#     print(f"The encoded text is {encrypted_word}")
-# def decrypt(cipher_text, shift_amount):
-#     decrypted_word = ""
-#     for letter in text:
-#         if letter in alphabet:
-#             position = alphabet.index(letter)
-#             new_position = position - shift_amount
-#             if new_position > len(alphabet):
-#                 new_position %= len(alphabet)
-#                 decrypted_word += alphabet[new_position]
-#             else:
-#                 decrypted_word += alphabet[new_position]
-#         else:
-#             decrypted_word += letter
-#     print(f"The decoded text is {decrypted_word}")
+def encrypt(plain_text, shift_amount):
+    encrypted_word = ""
+    for letter in text:
+        if letter in alphabet:
+            position = alphabet.index(letter)
+            new_position = position + shift_amount
+            if new_position > len(alphabet):
+                new_position %= len(alphabet)
+                encrypted_word += alphabet[new_position]
+            else:
+                encrypted_word += alphabet[new_position]
+        else:
+            encrypted_word += letter
+    print(f"The encoded text is {encrypted_word}")
+
+def decrypt(cipher_text, shift_amount):
+    decrypted_word = ""
+    for letter in text:
+        if letter in alphabet:
+            position = alphabet.index(letter)
+            new_position = position - shift_amount
+            if new_position > len(alphabet):
+                new_position %= len(alphabet)
+                decrypted_word += alphabet[new_position]
+            else:
+                decrypted_word += alphabet[new_position]
+        else:
+            decrypted_word += letter
+    print(f"The decoded text is {decrypted_word}")
 
 while again:
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
