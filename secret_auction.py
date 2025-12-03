@@ -27,3 +27,4 @@ while still_bidding:
     os.system('cls')
 
 find_highest_bidder(bidding_record=bid_wars)
+print(bid_wars)

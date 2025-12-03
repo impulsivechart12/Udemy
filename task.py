@@ -20,6 +20,25 @@ programing_dictionary = {"Bug": "An error in a program that prevents the program
                          "Loop": "The action of doing something over and over again",
                          "Function": "A piece of code that you can easily call over and over again."}
 
-for thing in programing_dictionary:
-    print(thing)
-    print(programing_dictionary[thing])
+travel_log = {
+    "France": ["Paris", "Lille", "Dijon"],
+    "Germany": ["Stuttgart", "Berlin"],
+}
+
+print(travel_log["France"][1])
+
+nested_list = ["A", "B", ["C", "D"]]
+print(nested_list[2][0])
+
+travel_log = {
+    "France": {
+        "total_visits": 8,
+        "cities_visited": ["Paris", "Lille", "Dijon"]
+    },
+    "Germany": {
+        "total_visits": 5,
+        "cities_visited": ["Stuttgart", "Berlin"]
+    },
+}
+
+print(travel_log["Germany"]["cities_visited"][0])
