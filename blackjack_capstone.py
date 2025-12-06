@@ -13,7 +13,7 @@ def calculate_score(cards):
     """Checks if player or dealer has 21. Also checks if hand is over 21 with and Ace, replaces
     Ace value of 11 to a 1"""
     if sum(cards) == 21 and len(cards) == 2:
-        return 0
+        return 21
     if 11 in cards and sum(cards) > 21:
         cards.remove(11)
         cards.append(1)

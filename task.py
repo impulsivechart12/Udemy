@@ -16,29 +16,76 @@
 #
 # greet_with(location="Cole", name="Minnesota")
 
-programing_dictionary = {"Bug": "An error in a program that prevents the program from running as expected",
-                         "Loop": "The action of doing something over and over again",
-                         "Function": "A piece of code that you can easily call over and over again."}
+# programing_dictionary = {"Bug": "An error in a program that prevents the program from running as expected",
+#                          "Loop": "The action of doing something over and over again",
+#                          "Function": "A piece of code that you can easily call over and over again."}
+#
+# travel_log = {
+#     "France": ["Paris", "Lille", "Dijon"],
+#     "Germany": ["Stuttgart", "Berlin"],
+# }
+#
+# print(travel_log["France"][1])
+#
+# nested_list = ["A", "B", ["Poop", "D"]]
+# print(nested_list[2][0])
+#
+# travel_log = {
+#     "France": {
+#         "total_visits": 8,
+#         "cities_visited": ["Paris", "Lille", "Dijon"]
+#     },
+#     "Germany": {
+#         "total_visits": 5,
+#         "cities_visited": ["Stuttgart", "Berlin"]
+#     },
+# }
+#
+# print(travel_log["Germany"]["cities_visited"][0])
 
-travel_log = {
-    "France": ["Paris", "Lille", "Dijon"],
-    "Germany": ["Stuttgart", "Berlin"],
-}
 
-print(travel_log["France"][1])
+# def format_name(first_name, last_name):
+#     if first_name=='' or last_name=='':
+#         return
+#     formated_f_name = first_name.title()
+#     formated_l_name =  last_name.title()
+#     return f"{formated_f_name} {formated_l_name}"
+#
+# print(format_name(input("Enter your first name: "), input("Enter your last name: ")))
 
-nested_list = ["A", "B", ["C", "D"]]
-print(nested_list[2][0])
 
-travel_log = {
-    "France": {
-        "total_visits": 8,
-        "cities_visited": ["Paris", "Lille", "Dijon"]
-    },
-    "Germany": {
-        "total_visits": 5,
-        "cities_visited": ["Stuttgart", "Berlin"]
-    },
-}
+# def function_1(text):
+#     return text + text
+#
+# def  function_2(text):
+#     return text.title()
+#
+# output = function_2(function_1("COLE"))
+# print(output)
 
-print(travel_log["Germany"]["cities_visited"][0])
+
+enemies = 1
+
+def increase_enemies():
+    global enemies = 2
+#     print(f"enemies inside function: {enemies}")
+#
+# increase_enemies()
+# print(f"enemies outside function: {enemies}")
+#
+# def game():
+#     def drink_potion():
+#         print(player_health)
+#     drink_potion()
+#
+# game()
+
+game_level = 3
+enemies = ["Skeleton", "Zombie", "Alien"]
+
+def create_enemy():
+    if game_level < 5:
+        new_enemy = enemies[0]
+
+    print(new_enemy)
+
