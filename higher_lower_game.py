@@ -16,8 +16,8 @@ def format_data(account):
     return f"{name}, a {description}, from {country}"
 
 def check_answer(guess, a_followers, b_followers):
-    """take the user gues and follower counts and returns if they get it right."""
-    if choice_a_followers > choice_a_followers:
+    """take the user guess and follower counts and returns if they get it right."""
+    if choice_a_followers > choice_b_followers:
         return guess == 'a'
     else:
         return guess == 'b'
