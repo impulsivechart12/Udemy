@@ -68,9 +68,9 @@ while serving:
         print_report(resources)
     else:
         drink = MENU[customer_selection]
-        if check_resources(customer_selection, resources, MENU) == True:
+        if check_resources(customer_selection, resources, MENU):
             total_paid = process_money(customer_selection, MENU)
-            if check_transaction(total_paid, drink['cost']) == True:
+            if check_transaction(total_paid, drink['cost']):
                 make_coffe(customer_selection, drink["ingredients"])
 
 # TODO: 6. Create it so staff can refill the machine. Extra credit"""
