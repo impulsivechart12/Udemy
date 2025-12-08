@@ -1,5 +1,3 @@
-
-#
 # friends = ["Ashley", "Cole", "Erin", "Joe", "Matt", "Sara", "Zach"]
 # random_friend = random.choice(friends)
 #
