@@ -107,13 +107,21 @@
 #     print("You are a Millennial.")
 # elif year > 1994:
 #     print("You are a Gen Z.")
+#
+# try:
+#     age = int(input("What is your age?\n"))
+# except ValueError:
+#     print("You have typed in valid number. Please type using a numerical value.")
+#     age = int(input("What is your age?\n"))
+#
+# if age > 18:
+#     print(f"You can drive a car at {age}.")
 
-try:
-    age = int(input("What is your age?\n"))
-except ValueError:
-    print("You have typed in valid number. Please type using a numerical value.")
-    age = int(input("What is your age?\n"))
+def add (n1, n2):
+	return n1 + n2
 
-if age > 18:
-    print(f"You can drive a car at {age}.")
+def calculate(n1, n2, function):
+	return function(n1, n2)
 
+result = calculate(2, 3, add)
+print(result)
