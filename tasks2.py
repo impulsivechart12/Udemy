@@ -116,12 +116,3 @@
 #
 # if age > 18:
 #     print(f"You can drive a car at {age}.")
-
-def add (n1, n2):
-	return n1 + n2
-
-def calculate(n1, n2, function):
-	return function(n1, n2)
-
-result = calculate(2, 3, add)
-print(result)
